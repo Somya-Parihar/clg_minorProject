@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">School</string>
+    <string name="col1">Subject</string>
+    <string name="col2">Marks Obtained</string>
+    <string name="col3">Total Marks</string>
+    <string name="defaul">NA</string>
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="404dp"
+        android:layout_height="404dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28">
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Roll Number"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <EditText
+                android:id="@+id/register_no"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:padding="10sp"
+                android:text="56"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"></EditText>
+
+        </TableRow>
+
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="First name"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <EditText
+                android:id="@+id/register_fname"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:padding="10sp"
+                android:text="56"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"></EditText>
+
+        </TableRow>
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="last name"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <EditText
+                android:id="@+id/register_lname"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:padding="10sp"
+                android:text="56"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"></EditText>
+        </TableRow>
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="fathers first name"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <EditText
+                android:id="@+id/register_ffname"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:padding="10sp"
+                android:text="56"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"></EditText>
+        </TableRow>
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="fathers last name"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <EditText
+                android:id="@+id/register_flname"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:padding="10sp"
+                android:text="56"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"></EditText>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="361dp"
+        android:layout_height="84dp"
+        android:text="Register Student"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_return3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="TeacherResultToPage"
+        android:text="return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/button_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Register"
+        android:text="more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="398dp"
+        android:layout_height="349dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Student name"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/update_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:padding="10sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="16sp"></TextView>
+
+        </TableRow>
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="fathers name"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/update_fname"
+                android:layout_width="256dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:hint="fathers name"
+                android:padding="10sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="16sp"></TextView>
+        </TableRow>
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="mothers name"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/update_mname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:hint="Mothers name"
+                android:padding="10sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="16sp"></TextView>
+        </TableRow>
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="mobile no"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <EditText
+                android:id="@+id/update_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:hint="mobile number"
+                android:padding="10sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"></EditText>
+
+        </TableRow>
+
+        <TableRow android:background="@color/match">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="address"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+            <EditText
+                android:id="@+id/update_social"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="4"
+                android:hint="your address"
+                android:padding="10sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"></EditText>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:text="Update Info"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/button_return3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updated"
+        android:text="update and return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
